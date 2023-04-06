@@ -110,10 +110,8 @@ for slope in slopes:
 
         for intercept in range(27):
 
-        	response = str(decrypt(s2, slope, intercept))        	if has_readable_words(response):
-
-        		print("".join([d1.get(c, c) for c in s1]), end=". ")
-
-        		print(response)
-
+        	response = str(decrypt(s2, slope, intercept))
+            if has_readable_words(response):
+                print("".join([d1.get(c, c) for c in s1]), end=". ")
+                print(response)
         	continue
